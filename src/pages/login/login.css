@@ -1,0 +1,87 @@
+.container{
+    background-color:  #2938bd1e;
+}
+
+.login-content{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+.login-content:nth-child(odd){
+    background-image: url('../../assets/backgrounds/svg/login.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.login-content:nth-child(even){
+    margin-top: 10%;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+    height: 60%;   
+}
+
+.login-form{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: safe;
+    align-items: center;
+}
+
+.card-container{
+    flex:1;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    border-radius: 10%;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+.card-container h3{
+    letter-spacing: 1px;
+    color: #446EA6;
+}
+
+.form-fields--wrapper{
+    width: 100%;
+    flex:5;
+}
+
+.login-content button{
+    width: 50%;
+    height: 2em;
+    text-align: center;   
+    border-radius: 5px;
+    border: none;
+    background-color:#82A8D9;
+    color: #fbae49;
+    margin-top: 50px;
+   
+    
+}
+
+.login-content button:hover{
+    background-color: #446EA6;
+    color:  #ffae00;
+    transition: 1s;
+}
+
+#main-img{
+    z-index: 1;
+}
+
+.backdrop-wrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}

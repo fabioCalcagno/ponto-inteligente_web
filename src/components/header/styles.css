@@ -1,0 +1,41 @@
+
+
+
+.header-container{
+    display: flex;
+    position: fixed;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10%;
+    width: 100vw;
+    background-color: #fbab48;
+    font-weight: bold;
+    color:  #F2F2F0;
+}
+
+
+.header-link{
+    padding: 0 5%;
+    text-decoration: none;
+    font-weight: bold;
+    color:  #F2F2F0;
+    letter-spacing: 0,5em;
+    cursor: initial;
+}
+
+.header-link:nth-child(1){
+    justify-self: flex-start;
+}
+
+.header-link span{
+    cursor: pointer;
+}
+
+.header-link:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+

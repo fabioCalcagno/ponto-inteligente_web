@@ -1,0 +1,92 @@
+
+
+
+
+.userarea-column-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-color: #103143;
+    overflow: hidden;
+    
+    
+}
+
+.userarea-column-container .tree-wrapper{
+    flex:1;
+    height: 90%;
+    background-color:  #191f6163;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid #FA9B73;
+    border-bottom: 2px solid #FA9B73;
+    border-right: 2px solid #FA9B73;
+    min-width: 210px;
+}
+
+.MuiTreeItem-root:hover{
+    background-color: #5864F5;
+}
+
+.Mui-expanded:hover{
+    background-color: #191F61;
+}
+
+.userarea-column-container main{
+    flex:5;
+    height: 90%;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: flex;
+    justify-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+.user-area_initial-background{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    
+    background-image: url(../../assets/backgrounds/svg/user-area--landing.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    
+    border-bottom: 2px dashed  #FA737C;
+    
+}
+
+
+.user-area_initial-background span{
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+    
+    
+}
+
+.grettings-span{
+    padding-right: 20px;
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #58BEF5;
+    font-size: 1.2em;
+
+}
+
+
+
+

@@ -1,0 +1,37 @@
+:root{
+    --primary-color: #1b2431;
+    --secondary-color-dark: #222c3c;
+    --menu-hover-color: #0a68d1;
+    --dark-blue--color:#103143;
+    --salmon--color:#FA737C;
+    --light-blue--color:#58BEF5;
+    --yellow--color:#E0DC3A;
+    --old-gold--color:#A8A534;
+}
+
+.column-container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.row-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.unselected-field{
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+

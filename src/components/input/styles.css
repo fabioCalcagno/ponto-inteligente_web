@@ -1,0 +1,35 @@
+.input-wrap{
+    width: 100%;
+    max-height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3em;
+}
+
+.input-wrap label{
+    display: flex;
+    align-items: center;
+    height: 3em;
+    color:  #446EA6;
+}
+
+.input-wrap input{
+    min-width: 50%;
+    border:none;
+    border-bottom: 2px solid #D9BBA9;
+    height: 3em;
+    padding-left: 10px;
+    color:  #0155c4;
+    background-color: inherit;
+    
+}
+
+.input-wrap input::-webkit-input-placeholder{
+    color:#00000036;
+    opacity: 1;
+}
+
+.input-wrap input:focus{
+    outline-color:  #D9BBA9;
+}

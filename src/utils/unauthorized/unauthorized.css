@@ -1,0 +1,9 @@
+.unauthorized-image{
+    width: 100vw;
+    height: 100vh;
+    fill:rgb(29, 17, 2);
+}
+
+.personal-container{
+    background-color: #249fc8;
+}

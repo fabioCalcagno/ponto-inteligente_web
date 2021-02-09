@@ -1,0 +1,14 @@
+.container{
+    
+}
+
+.image-container{
+    display: flex;
+    margin-top: 20px;
+    width: 100vw;
+    height: 100wh;
+    background: url('../../assets/backgrounds/svg/main.svg') center center no-repeat;
+    background-color: #ecf2f2;
+    background-position: center center;
+
+}
