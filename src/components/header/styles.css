@@ -9,9 +9,10 @@
     align-items: center;
     height: 10%;
     width: 100vw;
-    background-color: #fbab48;
+    background-color: #159aff;
     font-weight: bold;
     color:  #F2F2F0;
+    border-bottom: 1px solid #94ccf7;
 }
 
 
@@ -38,4 +39,3 @@
     -o-transform: scale(1.2);
     transform: scale(1.2);
 }
-

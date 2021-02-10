@@ -34,9 +34,8 @@
     height: 60%;
     background-color: #FFF;
     position: absolute;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 8px 42px 50px rgba(0,0,0,0.53); 
-    box-shadow: 0px 10px 13px -7px #000000, 3px 8px 42px 50px rgba(0,0,0,0.53);
-    
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 8px 22px 15px rgba(0,0,0,0.36); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 8px 22px 15px rgba(0,0,0,0.36);
 }
 
 

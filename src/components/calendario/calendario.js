@@ -29,7 +29,33 @@ export default function EnhancedTable(props) {
     numberOfElements:0,
     totalElements:0,
     totalPages:0,
-  })
+  });
+
+  function handleRowSelected(cellData){
+    setSelectedRow({...cellData.row})
+  }
+
+  const handlePageChange = (params) => {
+    setPage(params.page - 1);
+    let page = params.page - 1;
+    getList(props?.funcionarioId, page)
+    console.log(params)
+  };
+
+  function handleFormClose(event){
+    event.preventDefault()
+    setSelectedRow(false);
+  }
+
+  function handleSetPageableObject(responseData){
+    let array =[];
+    Object.keys(responseData).map((dataField, index) =>(
+      Object.keys(pageableObject).map((field) =>(
+        dataField === field ? array[field] = responseData[dataField] : null
+      ))
+  ))
+  setPageableObject(array)
+  }
 
   function getList(funcionarioId, page){
     setLoading(true)
@@ -37,16 +63,10 @@ export default function EnhancedTable(props) {
         headers: { 'Content-Type': 'application/json','Authorization': getAuthTokenAuthorization() }
     }).then((response)=>{
         setRowData(response.data.data.content)
-        let array =[];
-
-        Object.keys(response.data.data).map((dataField, index) =>(
-            Object.keys(pageableObject).map((field) =>(
-              dataField === field ? array[field] = response.data.data[dataField] : null
-            ))
-        ))
-        setPageableObject(array)
-       setLoading(false)
-    }, (onRejected => console.log(onRejected)));
+        handleSetPageableObject(response.data.data)    
+        setLoading(false)
+    }, (onRejected => 
+        console.log(onRejected)));
   }
 
   useEffect(()=>{
@@ -55,21 +75,7 @@ export default function EnhancedTable(props) {
     }
   });
 
-  function handleRowSelected(cellData){
-      setSelectedRow({...cellData.row})
-  }
-
-  const handlePageChange = (params) => {
-    setPage(params.page - 1);
-    let pagi = params.page - 1;
-    getList(props?.funcionarioId, pagi)
-    console.log(params)
-  };
-
-  function handleFormClose(event){
-    event.preventDefault()
-    setSelectedRow(false);
-  }
+  
 
   return (
   <>
@@ -102,7 +108,7 @@ export default function EnhancedTable(props) {
                 disableMultipleSelection
                 //disableExtendRowFullWidth='true'
                 rowsPerPageOptions={[25]}
-                paginationMode="server"
+                pagenationMode="server"
                 rowCount={pageableObject.totalElements} 
                 pageSize={25}
                 count={pageableObject.totalElements}
